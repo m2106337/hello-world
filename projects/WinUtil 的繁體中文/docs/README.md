@@ -1,3 +1,4 @@
+<img width="1915" height="1037" alt="螢幕擷取畫面 2026-10-19 224057" src="https://github.com/user-attachments/assets/6caef1c9-0682-45ac-a2cd-e1c5e2ddefe9" />
 # WinUtil Docs
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
