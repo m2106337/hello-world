@@ -6,7 +6,7 @@
 
 A curated compilation of Windows system tasks streamline **installs**, debloat with **tweaks**, troubleshoot with **config**, and configure **Windows updates**. Run it fresh on every new Windows in[...]
 
-![WinUtil screenshot](../WinUtil-zh-TW/assets/cover.png)
+![Title Screen](docs/src/assets/branding/title-screen.png)
 
 
 ---
