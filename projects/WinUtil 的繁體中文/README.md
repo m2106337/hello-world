@@ -6,7 +6,7 @@
 
 A curated compilation of Windows system tasks streamline **installs**, debloat with **tweaks**, troubleshoot with **config**, and configure **Windows updates**. Run it fresh on every new Windows in[...]
 
-![WinUtil screenshot](./assets/image1.png)
+![WinUtil screenshot](https://raw.githubusercontent.com/m2106337/hello-world/master/projects/WinUtil%20%E7%9A%84%20%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87/assets/image1.png)
 
 
 ---
