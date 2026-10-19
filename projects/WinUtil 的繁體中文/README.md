@@ -1,91 +1,41 @@
-# Chris Titus Tech's Windows Utility
+# WinUtil 的繁體中文
 
-[![Version](https://img.shields.io/github/v/release/ChrisTitusTech/winutil?color=%230567ff&label=Latest%20Release&style=for-the-badge)](https://github.com/ChrisTitusTech/winutil/releases/latest)
-![Downloads](https://img.shields.io/github/downloads/ChrisTitusTech/winutil/winutil.ps1?label=Total%20Downloads&style=for-the-badge)
-[![Discord](https://dcbadge.limes.pink/api/server/https://discord.gg/RUbZUZyByQ?theme=default-inverted&style=for-the-badge)](https://discord.gg/RUbZUZyByQ)
+![WinUtil 繁體中文介面](docs/src/assets/branding/title-screen.png)
 
-A curated compilation of Windows system tasks streamline **installs**, debloat with **tweaks**, troubleshoot with **config**, and configure **Windows updates**. Run it fresh on every new Windows in[...]
+這是 [Chris Titus Tech WinUtil](https://github.com/ChrisTitusTech/winutil) 的繁體中文介面版本。翻譯只改變顯示文字；套件識別碼、登錄檔路徑、調整鍵名、預設集與還原資料均維持原樣，不會改變 WinUtil 的系統操作行為。
 
-![Title Screen](docs/src/assets/branding/title-screen.png)
+## 已完成的繁中化
 
+- 主導覽、搜尋、主題、字體縮放與設定選單
+- 安裝頁的操作按鈕、分類、工具提示與已選項目
+- 安裝分類標題：瀏覽器、通訊、開發、文件、遊戲等
+- 系統調整頁的主要操作、功能、修復與傳統 Windows 面板
+- Windows Update 設定檔與安全性提醒
+- Windows 11 ISO 建立流程、USB 清除警告與狀態記錄
+- AppX 管理頁與影響說明
 
----
+## 在 Windows 執行
 
-## Quick Start
-
-> **WinUtil must be run as Administrator** because it performs system-wide changes.
-
-Open PowerShell or Terminal as admin, then run:
-
-**Stable Branch (recommended)**
-```ps1
-irm https://christitus.com/win | iex
-```
-
-**Development Branch**
-```ps1
-irm https://christitus.com/windev | iex
-```
-
-### How to open an admin terminal
-
-- **Start menu:** Right-click Start → *Windows PowerShell (Admin)* or *Terminal (Admin)*
-- **Search:** Press the `Windows key`, and type `PowerShell` or `Terminal`, then `Ctrl + Shift + Enter`
-
----
-
-## Automation / Presets
-
-Apply a predefined configuration without manual selection:
+1. 將此專案下載或複製到本機，例如 `C:\Tools\winutil-zh-tw`。
+2. 以系統管理員身分開啟 PowerShell。
+3. 執行：
 
 ```powershell
-& ([ScriptBlock]::Create((irm https://christitus.com/win))) -Preset Standard
+Set-ExecutionPolicy -Scope Process Bypass
+Set-Location C:\Tools\winutil-zh-tw
+.\Compile.ps1 -Run
 ```
 
-| Preset | Description |
-|--------|-------------|
-| `Standard` | Balanced defaults for most users |
-| `Minimal` | Minimal changes to suit every user |
-| `Advanced` | Deep tweaks for power users |
+`Compile.ps1` 會從來源產生 `winutil.ps1` 後啟動介面。請勿手動修改產生的 `winutil.ps1`。
 
-To view exactly what each preset does, see:
-https://github.com/ChrisTitusTech/winutil/blob/main/config/preset.json
+## Windows Terminal 百寶箱
 
----
+資料夾位於 Windows 電腦後，可將「百寶箱」profile 的 `commandline` 設為：
 
-## Build & Develop
+```json
+"commandline": "pwsh.exe -NoExit -ExecutionPolicy Bypass -Command \"Set-Location 'C:\\Tools\\winutil-zh-tw'; .\\Compile.ps1 -Run\""
+```
 
-See https://github.com/ChrisTitusTech/winutil/blob/main/.github/CONTRIBUTING.md
+## 授權與上游
 
----
-
-## Resources
-
-- [Official Documentation](https://winutil.christitus.com/)
-- [YouTube Tutorial](https://www.youtube.com/watch?v=6UQZ5oQg8XA)
-- [ChrisTitus.com Article](https://christitus.com/windows-tool/)
-- [Known Issues](https://winutil.christitus.com/knownissues/)
-- [Report an Issue](https://github.com/ChrisTitusTech/winutil/issues)
-
----
-
-## Support
-
-- Leave a ⭐ to show support!
-- Faster Dotnet Implementation for sale here: https://www.cttstore.com/windows-toolbox
-
-## Sponsors
-
-These are the sponsors that help keep this project alive with monthly contributions.
-
-<!-- sponsors --><a href="https://github.com/dwelfusius"><img src="https://github.com/dwelfusius.png" width="60px" alt="User avatar: " /></a><a href="https://github.com/mews-se"><im...>
-
-*<sub>Sponsors with a recurring subscription also get access to the .NET alternative.</sub>
-
----
-
-## Contributors
-
-[![Contributors](https://contrib.rocks/image?repo=ChrisTitusTech/winutil)](https://github.com/ChrisTitusTech/winutil/graphs/contributors)
-
-Thanks to everyone who has contributed time and effort to this project. Keep rocking 🍻
+本專案衍生自 [Chris Titus Tech 的 WinUtil](https://github.com/ChrisTitusTech/winutil)，並保留原始的 MIT 授權條款（見 [LICENSE](LICENSE)）。繁體中文介面翻譯遵循相同授權。
