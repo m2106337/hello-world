@@ -1,3 +1,4 @@
+<img width="1915" height="1037" alt="螢幕擷取畫面 2026-10-19 224057" src="https://github.com/user-attachments/assets/53288a4b-a207-41a9-9665-b9d378106abb" />
 # WinUtil 的繁體中文
 
 ![WinUtil 繁體中文介面](docs/src/assets/branding/title-screen.png)
