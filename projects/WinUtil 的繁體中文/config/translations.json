@@ -134,6 +134,16 @@
     "CTT PowerShell Profile - Install": "安裝 CTT PowerShell 設定檔",
     "CTT PowerShell Profile - Remove": "移除 CTT PowerShell 設定檔",
     "Remote Access": "遠端存取",
-    "OpenSSH Server - Enable": "啟用 OpenSSH 伺服器"
+    "OpenSSH Server - Enable": "啟用 OpenSSH 伺服器",
+    "Browsers": "瀏覽器",
+    "Communications": "通訊",
+    "Development": "開發",
+    "Document": "文件",
+    "Games": "遊戲",
+    "Microsoft Tools": "Microsoft 工具",
+    "Multimedia Tools": "多媒體工具",
+    "Pro Tools": "專業工具",
+    "Selfhosted Tools": "自架工具",
+    "Utilities": "實用工具"
   }
 }
